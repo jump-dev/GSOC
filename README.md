@@ -10,6 +10,7 @@ JuMP is a modeling interface and a collection of supporting packages for mathema
 - [Oscar Dowson](https://github.com/odow)
 - [Joaquim Dias Garcia](https://github.com/joaquimg)
 - [Mario Souto](https://github.com/mariohsouto)
+- [Mathieu Besançon](https://github.com/matbesancon)
 
 ## Ideas
 
@@ -72,7 +73,7 @@ and [COSMO](https://github.com/oxfordcontrol/COSMO.jl).
 
 | **Priority** | **Involves** | **Mentors** |
 | ------------ | ------------ | ----------- |
-|  Medium  | Creating Chordal extension and decomposition packages | [Joaquim Dias Garcia](https://github.com/joaquimg) |
+|  Medium  | Creating Chordal extension and decomposition packages | [Joaquim Dias Garcia](https://github.com/joaquimg), [Mathieu Besançon](https://github.com/matbesancon) |
 
 #### Abstract
 
