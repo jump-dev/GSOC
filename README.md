@@ -73,7 +73,7 @@ and [COSMO](https://github.com/oxfordcontrol/COSMO.jl).
 
 | **Priority** | **Involves** | **Mentors** |
 | ------------ | ------------ | ----------- |
-|  Medium  | Creating Chordal extension and decomposition packages | [Joaquim Dias Garcia](https://github.com/joaquimg), [Mathieu Besançon](https://github.com/matbesancon) |
+|  Medium  | Creating Chordal extension and decomposition packages | [Joaquim Dias Garcia](https://github.com/joaquimg), [Mathieu Besançon](https://github.com/matbesancon) [Benoît Legat](https://github.com/blegat) |
 
 #### Abstract
 
