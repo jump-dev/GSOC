@@ -53,3 +53,4 @@ For each new predictor added to MathOptAI.jl, the contributor must add:
 #### Mentors
 
  - [Oscar Dowson](https://github.com/odow)
+ - [Robert Parker](https://github.com/robbybp)
