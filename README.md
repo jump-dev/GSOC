@@ -20,10 +20,11 @@ For more information about this application see:
 
 #### Short description
 
-MathOptAI.jl is a package for embedding trained machine learning predictors into
-JuMP models. The field is moving fast, and many new models and formulations are
-being proposed. The goal is this project is to add support for new predictors to
-MathOptAI.jl so that it remains state-of-the-art.
+[MathOptAI.jl](https://github.com/lanl-ansi/MathOptAI.jl) is a package for
+embedding trained machine learning predictors into JuMP models. The field is
+moving fast, and many new models and formulations are being proposed. The
+goal is this project is to add support for new predictors to MathOptAI.jl
+so that it remains state-of-the-art.
 
 #### Project Scope
 
