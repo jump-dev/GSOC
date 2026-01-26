@@ -16,13 +16,13 @@ For more information about this application see:
 
 ## AI disclosure policy
 
-All GSoC-related issues and pull requests must discluse AI usage.
+All GSoC-related issues and pull requests must disclose AI usage.
 
-If AI tools were used:
+If AI tools were used, end the issue or PR with a sentence beginning:
 
 > AI assistance was used for ...
 
-If no AI tools were used at all:
+If no AI tools were used at all, end with the sentence:
 
 > No AI tools were used in this contribution.
 
