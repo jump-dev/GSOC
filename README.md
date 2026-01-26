@@ -14,6 +14,20 @@ language.
 For more information about this application see:
 [NumFOCUS's main GSoC page](https://github.com/numfocus/gsoc)
 
+## AI disclosure policy
+
+All GSoC-related issues and pull requests must discluse AI usage.
+
+If AI tools were used:
+
+> AI assistance was used for ...
+
+If no AI tools were used at all:
+
+> No AI tools were used in this contribution.
+
+Submissions that omit a disclosure may be closed without review.
+
 ## Project Ideas
 
 ### Extend MathOptAI.jl
