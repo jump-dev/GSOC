@@ -43,8 +43,9 @@ so that it remains state-of-the-art.
 #### Project Scope
 
 The contributor will conduct a literature review of the field to construct a
-prioritized list new formulations that are of interest to the research
-community. Then, as time permits, they will add new predictors to MathOptAI.jl.
+prioritized list new formulations that are of interest to the mathematical
+optimization community. Then, as time permits, they will add new predictors
+to MathOptAI.jl.
 
 #### Expected Deliverables
 
