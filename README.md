@@ -57,9 +57,21 @@ For each new predictor added to MathOptAI.jl, the contributor must add:
 
 #### Skills Required
 
- - Knowledge of mathematical optimization
- - Basic knowledge of Python, Julia, and JuMP
+There are two strong prerequisites:
+
+ - Strong knowledge of mathematical optimization (an ideal candidate will be
+   enrolled in a Ph.D. course in optimization)
+ - Strong knowledge of Julia and JuMP (an ideal candidate will have prior
+   experience contributing to open-source Julia repositories that depend on JuMP
+   or MathOptInterface)
+
+and two weak prerequisites:
+
+ - Basic knowledge of Python
  - Basic knowledge of machine learning frameworks such as PyTorch
+
+Candidates may open issues in MathOptAI.jl, but they are strongly discouraged
+from opening pull requests.
 
 #### Project Size
 
