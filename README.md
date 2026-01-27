@@ -70,8 +70,10 @@ and two weak prerequisites:
  - Basic knowledge of Python
  - Basic knowledge of machine learning frameworks such as PyTorch
 
-Candidates may open issues in MathOptAI.jl, but they are strongly discouraged
-from opening pull requests.
+Candidates looking to apply for this project are strongly discouraged from
+opening issues in MathOptAI.jl (pull requests will be closed without review).
+Instead, we would prefer candidates submit in their application a portfolio
+of work on other JuMP/Julia based projects.
 
 #### Project Size
 
