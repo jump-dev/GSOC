@@ -144,7 +144,8 @@ The following skills would be valuable for the project:
 
 [MathOptInterface (MOI)](https://github.com/jump-dev/MathOptInterface.jl) is the abstraction
 layer between solvers and high-level modeling languages like [JuMP](https://github.com/jump-dev/JuMP.jl).
-Many use cases (e.g. sensitivity analysis, scenario optimization, or GPU-accelerated solving)
+Many use cases such as [two-stage optimization](https://github.com/exanauts/ExaModels.jl/pull/210)
+or [ray tracing](https://arxiv.org/abs/2510.16172)
 require solving the same model for many different parameter values. Batched solvers that can
 exploit this structure are now emerging—see [MadIPM.jl#78](https://github.com/MadNLP/MadIPM.jl/pull/78)
 and recent work on [batched first-order methods for GPU](https://arxiv.org/abs/2601.21990). The
