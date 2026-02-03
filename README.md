@@ -77,7 +77,6 @@ of work on other JuMP/Julia based projects.
 
 #### Project Size
 
- - **175 hours (Medium)**: at least four (4) new predictors
  - **350 hours (Large)**: at least eight (8) new predictors
 
 #### Mentors
@@ -127,13 +126,13 @@ The following skills would be valuable for the project:
 
 #### Project Size
 
- - **175 hours (Medium)**: extend the AMPL converter to successfully convert all models
+ - **350 hours (Large)**: Extend the AMPL converter to successfully convert all models
    in [MacMPEC.jl](https://github.com/blegat/MacMPEC.jl) (the [MacMPEC](https://wiki.mcs.anl.gov/leyffer/index.php/MacMPEC)
-   collection of Mathematical Programs with Equilibrium Constraints in AMPL format)
- - **350 hours (Large)**: in addition to MacMPEC, successfully convert all models in
+   collection of Mathematical Programs with Equilibrium Constraints in AMPL format) and
    [CUTE.jl](https://github.com/GiovanniKarra/CUTE.jl) (the [CUTE](https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html)
    constrained and unconstrained testing environment benchmark set)
 
 #### Mentors
 
  - [Benoît Legat](https://github.com/blegat)
+ - [Oscar Dowson](https://github.com/odow)
