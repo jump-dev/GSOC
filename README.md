@@ -77,7 +77,6 @@ of work on other JuMP/Julia based projects.
 
 #### Project Size
 
- - **175 hours (Medium)**: at least four (4) new predictors
  - **350 hours (Large)**: at least eight (8) new predictors
 
 #### Mentors
@@ -127,16 +126,16 @@ The following skills would be valuable for the project:
 
 #### Project Size
 
- - **175 hours (Medium)**: extend the AMPL converter to successfully convert all models
+ - **350 hours (Large)**: Extend the AMPL converter to successfully convert all models
    in [MacMPEC.jl](https://github.com/blegat/MacMPEC.jl) (the [MacMPEC](https://wiki.mcs.anl.gov/leyffer/index.php/MacMPEC)
-   collection of Mathematical Programs with Equilibrium Constraints in AMPL format)
- - **350 hours (Large)**: in addition to MacMPEC, successfully convert all models in
+   collection of Mathematical Programs with Equilibrium Constraints in AMPL format) and
    [CUTE.jl](https://github.com/GiovanniKarra/CUTE.jl) (the [CUTE](https://arnold-neumaier.at/glopt/coconut/Benchmark/Library2_new_v1.html)
    constrained and unconstrained testing environment benchmark set)
 
 #### Mentors
 
  - [Benoît Legat](https://github.com/blegat)
+ - [Oscar Dowson](https://github.com/odow)
 
 ### Batched parameters in MathOptInterface and solvers
 
@@ -190,15 +189,15 @@ implementation to test the interface end-to-end (once established, other solvers
 
 #### Project Size
 
- - **175 hours (Medium)**: implement the `Batched{S}` set in MathOptInterface (#2904) and
+ - **350 hours (Large)**: implement the `Batched{S}` set in MathOptInterface (#2904) and
    interface it through the full stack (NLPModels.jl continuing PR #521, NLPModelsJuMP.jl,
-   and MadIPM PR #78), so that batched solves work end-to-end from JuMP to MadIPM
- - **350 hours (Large)**: in addition, implement the fallback in
-   [ParametricOptInterface.jl](https://github.com/jump-dev/ParametricOptInterface.jl): a
-   wrapper optimizer that supports batched parameters by solving each instance in turn when
-   the underlying solver does not support batching natively (analogous to the
+   and MadIPM PR #78), so that batched solves work end-to-end from JuMP to MadIPM. In
+   addition, implement the fallback in [ParametricOptInterface.jl](https://github.com/jump-dev/ParametricOptInterface.jl):
+   a wrapper optimizer that supports batched parameters by solving each instance in turn
+   when the underlying solver does not support batching natively (analogous to the
    `MathOptBatchOptimizer` sketch in the issue)
 
 #### Mentors
 
  - [Benoît Legat](https://github.com/blegat)
+ - [Oscar Dowson](https://github.com/odow)
