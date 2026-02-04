@@ -201,3 +201,4 @@ implementation to test the interface end-to-end (once established, other solvers
 
  - [Benoît Legat](https://github.com/blegat)
  - [Oscar Dowson](https://github.com/odow)
+ - [Michael Klamkin](https://github.com/klamike)
