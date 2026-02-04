@@ -136,3 +136,69 @@ The following skills would be valuable for the project:
 
  - [Benoît Legat](https://github.com/blegat)
  - [Oscar Dowson](https://github.com/odow)
+
+### Batched parameters in MathOptInterface and solvers
+
+#### Short description
+
+[MathOptInterface (MOI)](https://github.com/jump-dev/MathOptInterface.jl) is the abstraction
+layer between solvers and high-level modeling languages like [JuMP](https://github.com/jump-dev/JuMP.jl).
+Many use cases such as [two-stage optimization](https://github.com/exanauts/ExaModels.jl/pull/210)
+or [ray tracing](https://arxiv.org/abs/2510.16172)
+require solving the same model for many different parameter values. Batched solvers that can
+exploit this structure are now emerging—see [MadIPM.jl#78](https://github.com/MadNLP/MadIPM.jl/pull/78)
+and recent work on [batched first-order methods for GPU](https://arxiv.org/abs/2601.21990). The
+goal of this project is to add native support for *batched parameters* in MOI so that these
+solvers can be used from JuMP, and to provide a fallback for solvers that do not support batching
+so that JuMP models using the batching interface remain solver-agnostic.
+
+#### Project Scope
+
+The contributor will implement the `Batched{S}` set described in
+[MathOptInterface.jl#2904](https://github.com/jump-dev/MathOptInterface.jl/issues/2904):
+parameters can be set to a vector of values, and the model is solved once per batch element,
+with results accessible via `result_count`. This design allows solvers to natively support
+batched parameters (e.g. on GPU) while remaining compatible with the rest of the MOI stack.
+
+The work involves implementing support across the full stack:
+1. Add the `Batched{S}` set in [MathOptInterface.jl](https://github.com/jump-dev/MathOptInterface.jl)
+2. Add batched parameter support in [NLPModels.jl](https://github.com/JuliaSmoothOptimizers/NLPModels.jl),
+   continuing the work started in [NLPModels.jl#521](https://github.com/JuliaSmoothOptimizers/NLPModels.jl/pull/521)
+3. Add support for MOI's `Batched{S}` sets to [NLPModelsJuMP.jl](https://github.com/JuliaSmoothOptimizers/NLPModelsJuMP.jl)
+   by converting them to NLPModels' batch representation
+4. Test the whole pipeline with [MadIPM](https://github.com/MadNLP/MadIPM.jl)
+   (that supports batch solve thanks to [MadIPM.jl#78](https://github.com/MadNLP/MadIPM.jl/pull/78))
+
+This creates the complete path: **JuMP → MOI Batched set → NLPModelsJuMP → NLPModels → MadIPM**.
+MadIPM will be the first solver to support batched solves through JuMP, providing a concrete
+implementation to test the interface end-to-end (once established, other solvers can adopt it).
+
+#### Expected Deliverables
+
+ - Add the `Batched{S}` set and related MOI API (get/set, copy, etc.) in MathOptInterface
+ - Extend NLPModels.jl to support batched parameters (continuing PR #521)
+ - Implement the MOI `Batched{S}` to NLPModels conversion in NLPModelsJuMP.jl
+ - Tests and documentation for the new API at each layer
+
+#### Skills Required
+
+ - Good knowledge of Julia and [MathOptInterface](https://jump.dev/MathOptInterface.jl/)
+ - Good knowledge of mathematical optimization and solver interfaces
+ - Familiarity with [ParametricOptInterface](https://github.com/jump-dev/ParametricOptInterface.jl)
+   or parameter handling in MOI is helpful
+
+#### Project Size
+
+ - **350 hours (Large)**: implement the `Batched{S}` set in MathOptInterface (#2904) and
+   interface it through the full stack (NLPModels.jl continuing PR #521, NLPModelsJuMP.jl,
+   and MadIPM PR #78), so that batched solves work end-to-end from JuMP to MadIPM. In
+   addition, implement the fallback in [ParametricOptInterface.jl](https://github.com/jump-dev/ParametricOptInterface.jl):
+   a wrapper optimizer that supports batched parameters by solving each instance in turn
+   when the underlying solver does not support batching natively (analogous to the
+   `MathOptBatchOptimizer` sketch in the issue)
+
+#### Mentors
+
+ - [Benoît Legat](https://github.com/blegat)
+ - [Oscar Dowson](https://github.com/odow)
+ - [Michael Klamkin](https://github.com/klamike)
