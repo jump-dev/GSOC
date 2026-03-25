@@ -16,7 +16,7 @@ For more information about this application see:
 
 ## AI disclosure policy
 
-All GSoC-related issues and pull requests must disclose AI usage.
+All GSoC-related issues, pull requests, and proposals must disclose AI usage.
 
 If AI tools were used, end the issue or PR with a sentence beginning:
 
